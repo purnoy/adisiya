@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adisiya Holdings Ltd. | Home</title>
+  <link rel="icon" type="image/png" href="Only Logo.png">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#008266",
+            secondary: "#004f44",
+            accent: "#00bb8e",
+            ash: "#f3f5f7",
+          },
+          fontFamily: {
+            inter: ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-ash font-inter min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <header class="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+    <div class="container mx-auto px-4 py-2 flex items-center justify-between">
+      <div class="flex items-center">
+        <img src="Only Logo.png" alt="ATL Logo" class="h-12 w-auto mr-2">
+        <span class="text-2xl font-extrabold text-primary hidden sm:inline">ATL</span>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="py-2 px-4 rounded transition-all text-secondary hover:bg-primary hover:text-white">Home</a>
+        <a href="#" class="py-2 px-4 rounded transition-all text-secondary hover:bg-primary hover:text-white">About</a>
+        <a href="#" class="py-2 px-4 rounded transition-all text-secondary hover:bg-primary hover:text-white">Projects</a>
+        <a href="#" class="py-2 px-4 rounded transition-all text-secondary hover:bg-primary hover:text-white">Our Team</a>
+        <a href="#" class="py-2 px-4 rounded transition-all text-secondary hover:bg-primary hover:text-white">Contact</a>
+      </nav>
+      <!-- Mobile Hamburger -->
+      <button id="nav-toggle" class="md:hidden p-2 rounded hover:bg-primary hover:text-white transition-all">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Nav Drawer -->
+    <div id="mobile-menu" class="md:hidden bg-white w-full absolute top-full left-0 shadow-lg transition-all duration-300 origin-top scale-y-0">
+      <nav class="flex flex-col space-y-1 px-6 py-4 text-lg">
+        <a href="#" class="py-2 px-3 rounded transition-all text-secondary hover:bg-primary hover:text-white">Home</a>
+        <a href="#" class="py-2 px-3 rounded transition-all text-secondary hover:bg-primary hover:text-white">About</a>
+        <a href="#" class="py-2 px-3 rounded transition-all text-secondary hover:bg-primary hover:text-white">Projects</a>
+        <a href="#" class="py-2 px-3 rounded transition-all text-secondary hover:bg-primary hover:text-white">Our Team</a>
+        <a href="#" class="py-2 px-3 rounded transition-all text-secondary hover:bg-primary hover:text-white">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col items-center justify-start mt-24 w-full">
+
+    <!-- Hero Section -->
+    <section class="w-full flex flex-col items-center text-center relative">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80"
+           class="w-full h-[390px] md:h-[470px] object-cover object-center brightness-90"
+           alt="Hero Real Estate">
+      <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/40">
+        <h1 class="text-3xl md:text-5xl font-extrabold text-white drop-shadow-lg mb-4">
+          Crafting Landmark Spaces <br>
+          <span class="text-accent">for a Luxurious Tomorrow</span>
+        </h1>
+        <p class="text-lg md:text-xl text-white mb-8 drop-shadow">
+          Discover premium residences and signature developments—designed for urban living and future growth.
+        </p>
+        <a href="#" class="bg-primary hover:bg-accent transition-all text-white text-lg px-8 py-3 rounded-lg font-semibold shadow-lg">
+          Book a Visit
+        </a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="w-full max-w-7xl px-4 py-14 flex flex-col items-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-primary mb-10">Featured Projects</h2>
+      <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all flex flex-col items-center p-6">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=500&q=80"
+               alt="Project 1" class="rounded-lg w-full h-52 object-cover mb-5">
+          <h3 class="font-bold text-lg text-secondary mb-1">Adisiya Skyline Residences</h3>
+          <p class="text-accent mb-3">Sector 19, Jolshiri Abashon</p>
+          <a href="#" class="bg-accent text-white px-6 py-2 rounded-md font-semibold hover:bg-secondary transition-all">
+            Project Details
+          </a>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all flex flex-col items-center p-6">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=500&q=80"
+               alt="Project 2" class="rounded-lg w-full h-52 object-cover mb-5">
+          <h3 class="font-bold text-lg text-secondary mb-1">Adisiya Signature Heights</h3>
+          <p class="text-accent mb-3">Sector 21, Jolshiri Abashon</p>
+          <a href="#" class="bg-accent text-white px-6 py-2 rounded-md font-semibold hover:bg-secondary transition-all">
+            Project Details
+          </a>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all flex flex-col items-center p-6">
+          <img src="https://images.unsplash.com/photo-1459603677915-a62079ffd002?auto=format&fit=crop&w=500&q=80"
+               alt="Project 3" class="rounded-lg w-full h-52 object-cover mb-5">
+          <h3 class="font-bold text-lg text-secondary mb-1">Adisiya Urban Villas</h3>
+          <p class="text-accent mb-3">Sector 25, Bashundhara</p>
+          <a href="#" class="bg-accent text-white px-6 py-2 rounded-md font-semibold hover:bg-secondary transition-all">
+            Project Details
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="w-full max-w-4xl bg-white rounded-xl shadow-lg p-8 md:p-12 my-10 flex flex-col items-center">
+      <h2 class="text-2xl font-bold text-secondary mb-4">About Us</h2>
+      <p class="text-lg text-gray-700 text-center">
+        Adisiya Holdings Limited is a boutique real estate development company focused on delivering high-value, luxurious living experiences in Bangladesh's most promising urban zones. Whether you're investing in land, co-developing apartments, or seeking ready-to-live properties — we bring legal transparency, architectural excellence, and future-ready infrastructure under one brand.
+      </p>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="w-full max-w-7xl px-4 py-12 flex flex-col items-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-primary mb-10">What Our Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+        <div class="bg-white rounded-xl shadow-lg flex flex-col items-center p-7">
+          <img src="https://randomuser.me/api/portraits/men/46.jpg" class="w-16 h-16 rounded-full border-4 border-primary mb-2" alt="Client 1">
+          <div class="font-semibold text-secondary">Mr. Aminul Islam</div>
+          <div class="text-yellow-400 mb-1">★★★★★</div>
+          <div class="font-semibold text-accent mb-2">Skyline Residences</div>
+          <p class="text-gray-600 text-center text-base">Excellent customer service, legal transparency, and premium locations. Highly recommended!</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg flex flex-col items-center p-7">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-16 h-16 rounded-full border-4 border-primary mb-2" alt="Client 2">
+          <div class="font-semibold text-secondary">Mrs. Sarah Rahman</div>
+          <div class="text-yellow-400 mb-1">★★★★★</div>
+          <div class="font-semibold text-accent mb-2">Urban Villas</div>
+          <p class="text-gray-600 text-center text-base">Our apartment is modern, well-designed, and the buying process was truly smooth.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg flex flex-col items-center p-7">
+          <img src="https://randomuser.me/api/portraits/men/47.jpg" class="w-16 h-16 rounded-full border-4 border-primary mb-2" alt="Client 3">
+          <div class="font-semibold text-secondary">Mr. Rashed Chowdhury</div>
+          <div class="text-yellow-400 mb-1">★★★★★</div>
+          <div class="font-semibold text-accent mb-2">Signature Heights</div>
+          <p class="text-gray-600 text-center text-base">Adisiya's commitment to quality and excellence is unmatched in the city.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="w-full max-w-4xl bg-white rounded-xl shadow-lg p-8 md:p-12 my-8 flex flex-col items-center">
+      <h2 class="text-xl font-bold text-secondary mb-6">Our Partners</h2>
+      <div class="flex flex-wrap gap-10 justify-center items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/5977/5977576.png" alt="Partner 1" class="h-14 w-auto">
+        <img src="https://cdn-icons-png.flaticon.com/512/679/679720.png" alt="Partner 2" class="h-14 w-auto">
+        <img src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png" alt="Partner 3" class="h-14 w-auto">
+        <img src="https://cdn-icons-png.flaticon.com/512/483/483361.png" alt="Partner 4" class="h-14 w-auto">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616494.png" alt="Partner 5" class="h-14 w-auto">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-secondary w-full mt-12 py-10 text-white">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-10">
+      <div>
+        <h3 class="font-semibold mb-3 text-accent">Navigation</h3>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Our Team</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3 text-accent">Resources</h3>
+        <ul>
+          <li>Career</li>
+          <li>Mission</li>
+          <li>Vision</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3 text-accent">Contact</h3>
+        <address>
+          Plot - 1136/A, Japan Street,<br> Japan Street, Dhaka 1229
+        </address>
+      </div>
+    </div>
+    <div class="text-center text-gray-300 mt-8 text-sm">
+      &copy; 2025 Adisiya Holdings Ltd. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript for mobile menu toggle -->
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    navToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('scale-y-0');
+      mobileMenu.classList.toggle('scale-y-100');
+    });
+    // Close menu on link click (for mobile)
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('scale-y-0');
+        mobileMenu.classList.remove('scale-y-100');
+      });
+    });
+  </script>
+</body>
+</html>
